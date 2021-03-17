@@ -4,16 +4,16 @@ module.exports = {
     getSchoolCovidSummary: async () => {
         return await fsPromises.readFile('schoolcovidsummary.json')
     },
-    getSchoolCovidTesting: () => {
+    getSchoolCovidTesting: async () => {
         return await fsPromises.readFile('schoolcovidtesting.json')
     },
-    getSchoolPartnersActiveCovid: () => {
+    getSchoolPartnersActiveCovid: async () => {
         return await fsPromises.readFile('schoolpartnersactivecovid.json')
     },
-    getCasesByStatusAndPHU: () => {
+    getCasesByStatusAndPHU: async () => {
         return await fsPromises.readFile('cases_by_status_and_phu.json')
     },
-    getOngoingOutbreaks: () => {
+    getOngoingOutbreaks: async () => {
         return await fsPromises.readFile('ongoing_outbreaks.json')
     }
 }

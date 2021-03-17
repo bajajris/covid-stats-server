@@ -18,7 +18,7 @@ app.get('/schoolcovidsummary', (req, res) => {
     })
 })
 
-app.get('/ongoing_outbreaks', (req, res) => {
+app.get('/ongoingoutbreaks', (req, res) => {
     data.getOngoingOutbreaks().then((sData) => {
         res.send(sData);
     }, err => {
@@ -42,7 +42,7 @@ app.get('/schoolcovidtesting', (req, res) => {
     })
 })
 
-app.get('/cases_by_status_and_phu', (req, res) => {
+app.get('/casesbystatusandphu', (req, res) => {
     data.getCasesByStatusAndPHU().then((sData) => {
         res.send(sData);
     }, err => {
